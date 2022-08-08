@@ -11,19 +11,26 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: rgb(156, 156, 156);
+    background: rgb(22, 25, 32);
 }
 
 .wraper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width: 350px;
-    height: 400px;
+    width: 315px;
+    height: 420px;
     border-radius: 5%;
-    background: rgb(232, 232, 232);
-    box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.4);
+    background: rgb(32, 34, 46);
+    box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.8);
+}
+
+.title{
+    color: rgb(124, 130, 157);
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .real,
@@ -34,24 +41,31 @@ body{
     align-items: center;
     width: 280px;
     margin-bottom: 40px;
-
+    
 }
 
 .real__imp,
 .euro__imp,
 .btc__imp{
+    background: rgb(49, 55, 71);
+    border: 1px solid rgb(66, 75, 98);
+    border-radius: .5em;
     width: 120px;
     height: 35px;
-    border: 1px solid rgb(177, 177, 177);
-    border-radius: .5em;
 }
 
 .real__imp::placeholder,
 .euro__imp::placeholder,
 .btc__imp::placeholder{
     text-align: center;
+    color: rgb(141, 165, 227);
+    font-size: 1.1em;
+    letter-spacing: 1px;
 }
 
+.wraper div:nth-child(4){
+    margin-bottom: 90px;
+}
 
 .real__equal,
 .euro__equal,
@@ -64,7 +78,8 @@ body{
 .real__result,
 .euro__result,
 .btc__result{
-    font-size: 1.2em;
-    color: rgb(115, 115, 115);
+    font-size: 2em;
+    font-family: 'Caveat', cursive;
+    color: rgb(233, 123, 64);
 }
 
