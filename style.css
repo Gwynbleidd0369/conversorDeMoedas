@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(156, 156, 156);
+}
+
+.wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    border-radius: 5%;
+    background: rgb(232, 232, 232);
+    box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.4);
+}
+
+.real,
+.euro,
+.btc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 40px;
+
+}
+
+.real__imp,
+.euro__imp,
+.btc__imp{
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: .5em;
+}
+
+.real__imp::placeholder,
+.euro__imp::placeholder,
+.btc__imp::placeholder{
+    text-align: center;
+}
+
+
+.real__equal,
+.euro__equal,
+.btc__equal{
+
+    font-size: 1.5em;
+    color: rgb(115, 115, 115);
+}
+
+.real__result,
+.euro__result,
+.btc__result{
+    font-size: 1.2em;
+    color: rgb(115, 115, 115);
+}
+
